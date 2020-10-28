@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <title>Column Images</title>
+      <style>
+            *{
+                  padding: 0;
+                  margin: 0;
+                  box-sizing: border-box;
+                  font-family: 'Courier New', Courier, monospace;
+            }
+
+            .title{
+                  color: rgb(0, 98, 163);
+                  margin: 30px auto;
+                  text-align: center;
+                  font-weight: bold;
+                  font-size: 3em;
+                  
+            }
+            .gallery{
+                  columns: 3 300px;
+                  column-gap: 30px;
+                  width: 1000px;
+                  margin: auto;
+            }
+
+            .gallery-img{
+
+                  width: 100%;
+                  margin-bottom: 30px;
+                  border-radius: 5px;
+                  
+            }
+            .gallery-img:hover{
+                  filter: contrast(150%);
+                  transition: 0.5s;
+            }
+
+            @media screen and (max-width: 1024px) {
+                  .gallery{
+                        width: 90%;
+                  }
+            }
+
+            @media screen and (max-width: 480px) {
+                  .gallery{
+                        columns: 2 150px;
+                        column-gap: 15px;
+                  }
+                  .gallery-img{
+                        margin-bottom: 15px;
+                  }
+            }
+      </style>
+</head>
+<body>
+      <div class="title"><span style="color:darkslategrey">Hanna</span> Gallery</div>
+      <div class="gallery">
+            <img src="images/hn3.jpg" alt="" class="gallery-img">
+            <img src="images/hn4.jpg" alt="" class="gallery-img">
+            <img src="images/hn5.jpg" alt="" class="gallery-img">
+            <img src="images/hn7.jpg" alt="" class="gallery-img">
+            <img src="images/hn8.jpg" alt="" class="gallery-img">
+            <img src="images/hn9.jfif" alt="" class="gallery-img">
+            <img src="images/hn10.jpg" alt="" class="gallery-img">
+            <img src="images/hn11.jfif" alt="" class="gallery-img">
+            <img src="images/hn12.jfif" alt="" class="gallery-img">
+            <img src="images/hn13.jpg" alt="" class="gallery-img">
+            <img src="images/hn14.jpg" alt="" class="gallery-img">
+            <img src="images/hn15.jpg" alt="" class="gallery-img">
+            <img src="images/hn16.jpg" alt="" class="gallery-img">
+            <img src="images/hn17.jpg" alt="" class="gallery-img">
+            <img src="images/hn18.jpg" alt="" class="gallery-img">
+      </div>
+</body>
+</html>

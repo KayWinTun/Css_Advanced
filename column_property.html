@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <title>Column Property</title>
+      <style>
+            *{
+                  padding: 0;
+                  margin:0;
+                  box-sizing: border-box;
+                  font-family: 'Courier New', Courier, monospace;
+            }
+
+            body{
+                  padding: 50px;
+                  
+            }
+
+            .heading{
+                  color: rgb(173, 222, 255);
+                  
+                  
+            }
+            .para{
+                  color: rgb(40, 44, 44);
+                  column-count: 3;
+                  column-width: 300px;
+                  column-rule: 2px solid #137cdd;
+                  column-gap: 70px;
+            }
+            .para p{
+            
+                  margin-bottom: 30px;
+                  line-height: 2;
+            }
+
+            .full{
+                  column-span: all ;
+                  margin-top: 30px;
+            }
+
+            @media screen and (max-width: 480px){
+                  body{
+                        padding: 25px;
+                  }
+                  .heading{
+                        margin-bottom: 30px;
+                  }
+                  .full{
+                        margin-top: 0;
+                  }
+            }
+      </style>
+</head>
+<body>
+      <h1 class="heading">Css Column Property</h1>
+      <div class="para">
+            <p class="full">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quibusdam praesentium aut nulla numquam ratione facilis recusandae non soluta laborum reprehenderit quisquam cupiditate, corporis voluptatibus necessitatibus ut repellat porro. Dicta, explicabo!</p>
+
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Totam mollitia fugiat laboriosam harum, accusamus atque consequuntur rem corporis sunt molestias a nostrum cum est explicabo placeat minima soluta doloremque voluptas!</p>
+
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Totam mollitia fugiat laboriosam harum, accusamus atque consequuntur rem corporis sunt molestias a nostrum cum est explicabo placeat minima soluta doloremque voluptas!</p>
+
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Totam mollitia fugiat laboriosam harum, accusamus atque consequuntur rem corporis sunt molestias a nostrum cum est explicabo placeat minima soluta doloremque voluptas!</p>
+
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Totam mollitia fugiat laboriosam harum, accusamus atque consequuntur rem corporis sunt molestias a nostrum cum est explicabo placeat minima soluta doloremque voluptas!</p>
+
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Totam mollitia fugiat laboriosam harum, accusamus atque consequuntur rem corporis sunt molestias a nostrum cum est explicabo placeat minima soluta doloremque voluptas!</p>
+
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Totam mollitia fugiat laboriosam harum, accusamus atque consequuntur rem corporis sunt molestias a nostrum cum est explicabo placeat minima soluta doloremque voluptas!</p>
+
+            <p class="full">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Totam mollitia fugiat laboriosam harum, accusamus atque consequuntur rem corporis sunt molestias a nostrum cum est explicabo placeat minima soluta doloremque voluptas!</p>
+
+            
+      </div>
+
+</body>
+</html>
