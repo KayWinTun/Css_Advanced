@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <title>Css Animations</title>
+      <style>
+            .obj{
+                  width: 100px;
+                  height: 100px;
+                  background: darkmagenta;
+                  transition: 0.5s;
+                  transform: translate(150px);
+                  /* animation-name: first;*/
+                  /* animation-delay: 2s; */
+                  /* animation-timing-function: linear; */
+                  /* animation-duration: 0s; */
+                  /* animation-iteration-count: infinite;
+                  /* animation-direction: alternate; */
+                  
+                  animation: first 2s linear 0s infinite alternate ;
+            }
+            .obj:hover{
+                  transform: translate(50px);
+            }
+
+            @keyframes first {
+                  from{
+                        transform: translate(0px);
+                  }
+                  to{
+                        transform: translate(150px);
+                  }
+            }
+      </style>
+</head>
+<body>
+      <h1 style="font-family: 'Courier New', Courier, monospace; color: cyan;">Css Animation</h1>
+      <div class="obj"></div>
+      
+</body>
+</html>
