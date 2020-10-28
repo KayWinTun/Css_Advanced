@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <title>Css Transform</title>
+      <style>
+            .one{
+                  width: 300px;
+                  transform: scale(0.5);
+            }
+            .two{
+                  width: 300px;
+                  /* transform: translate(50px,20px); */
+                  transition: 1s;
+                  
+            }
+            .two:hover{
+                  transform: translate(20px) scale(0.9);
+            }
+            .three{
+                  transform:rotate(20deg);
+                  margin:50px 0px;
+            }
+
+            .four{
+                  width: 300px;
+                  transform: skew(10deg,10deg) scale(0.7);
+                  transition: 1s;
+            }
+
+            .four:hover{
+                  transform:skewX(10deg) scale(0.5);
+            }
+      </style>
+</head>
+<body>
+      <img class="one" src="images/hn5.jpg" alt="">
+      <hr>
+      <img class="two" src="images/hn7.jpg" alt="">
+      <hr>
+      <img src="images/hn8.jpg" alt="" class="three">
+      <hr>
+      <img src="images/hn3.jpg" alt="" class="four">
+      <hr>
+</body>
+</html>
